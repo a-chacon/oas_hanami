@@ -7,3 +7,5 @@ ENV["HANAMI_ENV"] ||= "test"
 require "hanami/prepare"
 
 SPEC_ROOT.glob("support/**/*.rb").each { |f| require f }
+
+require "debug"
