@@ -35,22 +35,40 @@ module OasHanami
       private
 
       def extract_host_routes
-        routes = valid_routes.map { |r| Builders::OasRouteBuilder.build_from_hanami_route(r) }
-
-        routes.select! { |route| route.tags.any? } if OasHanami.config.include_mode == :with_tags
-        if OasHanami.config.include_mode == :explicit
-          routes.select! do |route|
-            route.tags.any? do |t|
-              t.tag_name == "oas_include"
-            end
-          end
-        end
-        routes
+        debugger
+        #
+        # routes = inspector.call.lines.map(&:strip).reject(&:empty?)
+        #
+        # routes = routes.map { |r| Builders::OasRouteBuilder.build_from_hanami_route(r) }
+        #
+        # routes.select! { |route| route.tags.any? } if OasHanami.config.include_mode == :with_tags
+        # if OasHanami.config.include_mode == :explicit
+        #   routes.select! do |route|
+        #     route.tags.any? do |t|
+        #       t.tag_name == "oas_include"
+        #     end
+        #   end
+        # end
+        # routes
+        []
       end
 
       def valid_routes
-        Hanami.app.router.routes.select do |route|
+        extract_host_routes.select do |route|
           valid_api_route?(route)
+        end
+      end
+
+      def resolve_formatter(format)
+        case format
+        when "human_friendly"
+          require "hanami/router/formatter/human_friendly"
+          Hanami::Router::Formatter::HumanFriendly.new
+        when "csv"
+          require "hanami/router/formatter/csv"
+          Hanami::Router::Formatter::CSV.new
+        else
+          raise ArgumentError, "Unsupported format: #{format}"
         end
       end
 
