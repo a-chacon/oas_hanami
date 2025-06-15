@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/a-chacon/oas_hanami/compare/oas_hanami/v0.1.1...oas_hanami/v0.1.2) (2025-06-15)
+
+
+### Bug Fixes
+
+* add ruby version ([a411890](https://github.com/a-chacon/oas_hanami/commit/a4118907d7e8a2b71dcd25c0c7f77bc3ac6cd2d7))
+
 ## [0.1.1](https://github.com/a-chacon/oas_hanami/compare/oas_hanami/v0.1.0...oas_hanami/v0.1.1) (2025-06-15)
 
 
