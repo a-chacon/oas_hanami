@@ -9,9 +9,9 @@
 
 OasHanami is a tool for generating **automatic interactive documentation for your Hanami APIs**. It generates an **OAS 3.1** document and displays it using **[RapiDoc](https://rapidocweb.com)**.
 
-Built for the modern [Hanami](https://hanamirb.org) framework, OasHanami leverages Hanami's lightweight and modular design, making it ideal for building scalable Ruby applications. It relies on the [OasCore](https://github.com/a-chacon/oas_core) gem for seamless OpenAPI integration.
+It relies on the [OasCore](https://github.com/a-chacon/oas_core).
 
-![Screenshot](https://a-chacon.com/assets/images/oas_hanami_ui.png)
+![Screenshot](https://a-chacon.com/oas_core/assets/hanami_theme.png)
 
 ## Documentation
 
@@ -35,4 +35,4 @@ The gem is available as open source under the terms of the [GPL-3.0](https://www
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=[USERNAME]/oas_hanami&type=Date)](https://www.star-history.com/#[USERNAME]/oas_hanami&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=a-chacon/oas_hanami&type=Date)](https://www.star-history.com/#a-chacon/oas_hanami&Date)
