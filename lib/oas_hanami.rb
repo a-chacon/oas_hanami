@@ -20,12 +20,13 @@ module OasHanami
 
   class << self
     def build
+      clear_cache
       OasCore.config = config
 
-      RouteExtractor.host_routes
-      # oas = OasCore::Builders::SpecificationBuilder.new.with_oas_routes(host_routes).build
-      #
-      # oas.to_spec
+      host_routes = RouteExtractor.host_routes
+      oas = OasCore::Builders::SpecificationBuilder.new.with_oas_routes(host_routes).build
+
+      oas.to_spec
     end
 
     def configure
@@ -34,6 +35,13 @@ module OasHanami
 
     def config
       @config ||= Configuration.new
+    end
+
+    def clear_cache
+      return if Hanami.env?(:production)
+
+      MethodSource.clear_cache
+      RouteExtractor.clear_cache
     end
   end
 end

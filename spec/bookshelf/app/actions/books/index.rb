@@ -11,6 +11,23 @@ module Bookshelf
           optional(:per_page).value(:integer, gt?: 0, lteq?: 100)
         end
 
+        # @summary List all books with pagination
+        # You should use it for list all the books in database. **Markdown too!**
+        #   - A list
+        #   - Of Different
+        #   - Elements
+        # @parameter page(query) [Integer] The page number (default: 1)
+        # @parameter per_page(query) [Integer] The number of items per page (default: 5, max: 100)
+        # @response Books list(200) [Array<Hash>] List of books
+        # @response_example Books list(200) [Array<Hash>]
+        #   [
+        #     {
+        #       id: 1,
+        #       title: "Example Book",
+        #       author: "John Doe"
+        #     }
+        #   ]
+        # @tags Books
         def handle(request, response)
           halt 422 unless request.params.valid?
 

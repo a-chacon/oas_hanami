@@ -9,14 +9,14 @@ RSpec.configure do |config|
   # Used in the before/after hooks below to ensure each database is cleaned between examples.
   #
   # Modify this proc (or any code below) if you only need specific databases cleaned.
-  all_databases = -> {
+  all_databases = lambda {
     slices = [Hanami.app] + Hanami.app.slices.with_nested
 
-    slices.each_with_object([]) { |slice, dbs|
+    slices.each_with_object([]) do |slice, dbs|
       next unless slice.key?("db.rom")
 
       dbs.concat slice["db.rom"].gateways.values.map(&:connection)
-    }.uniq
+    end.uniq
   }
 
   config.before :suite do

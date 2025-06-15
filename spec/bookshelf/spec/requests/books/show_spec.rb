@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/requests/books/show_spec.rb
 
 RSpec.describe "GET /books/:id", type: %i[request db] do

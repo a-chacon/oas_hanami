@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe "POST /books", type: %i[request db] do
   let(:request_headers) do
     { "HTTP_ACCEPT" => "application/json", "CONTENT_TYPE" => "application/json" }

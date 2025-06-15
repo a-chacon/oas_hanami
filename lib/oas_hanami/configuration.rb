@@ -1,17 +1,15 @@
+# frozen_string_literal: true
+
 module OasHanami
   class Configuration < OasCore::Configuration
-    attr_accessor :autodiscover_request_body, :autodiscover_responses, :ignored_actions, :rapidoc_theme, :layout
-    attr_reader :route_extractor, :include_mode
+    attr_accessor :rapidoc_theme
+    attr_reader :include_mode
 
     def initialize
-      super
-      @route_extractor = RouteExtractor
+      super(info: generate_info_object)
+
       @include_mode = :all
-      @autodiscover_request_body = true
-      @autodiscover_responses = true
-      @ignored_actions = []
-      @rapidoc_theme = :rails
-      @layout = nil
+      @rapidoc_theme = :hanami
     end
 
     def include_mode=(value)
@@ -21,17 +19,45 @@ module OasHanami
       @include_mode = value
     end
 
-    def route_extractor=(value)
-      unless value.respond_to?(:host_routes) &&
-             value.respond_to?(:host_routes_by_path) &&
-             value.respond_to?(:clear_cache) &&
-             value.respond_to?(:host_paths) &&
-             value.respond_to?(:clean_route)
-        raise ArgumentError,
-              "Route extractor must have the following methods: host_routes, host_routes_by_path, clear_cache, host_paths, and clean_route"
-      end
+    def generate_info_object
+      OasCore::Spec::Info.new(
+        title: title,
+        summary: summary,
+        description: description
+      )
+    end
 
-      @route_extractor = value
+    def title
+      "OasHanami"
+    end
+
+    def summary
+      "OasHanami: Automatic Interactive API Documentation for Hanami"
+    end
+
+    def description
+      <<~DESC
+        # Welcome to OasHanami
+
+        OasHanami automatically generates interactive documentation for your Hanami APIs using the OpenAPI Specification 3.1 (OAS 3.1) and displays it with a sleek UI.
+
+        ## Getting Started
+
+        You've successfully mounted the OasHanami engine. This default documentation is based on your routes and automatically gathered information.
+
+        For more details, visit the official documentation: [OasCore Documentation](https://a-chacon.com/oas_core).
+
+        ## Features
+
+        - **Automatic OAS 3.1 Document Generation**: No manual specification required.
+        - **[RapiDoc](https://github.com/rapi-doc/RapiDoc) Integration**: Interactive API exploration.
+        - **Minimal Setup**: Basic documentation works out of the box.
+        - **Extensible**: Customize through configuration and YARD tags.
+
+        Explore your API documentation and enjoy the power of OasHanami!
+
+        Any questions visit the [OasHanami GitHub Repository](https://github.com/a-chacon/oas_hanami).
+      DESC
     end
   end
 end

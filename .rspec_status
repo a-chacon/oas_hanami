@@ -1,0 +1,11 @@
+example_id                                                           | status | run_time        |
+-------------------------------------------------------------------- | ------ | --------------- |
+./spec/bookshelf/spec/requests/books/create_spec.rb[1:1:1]           | failed | 0.00098 seconds |
+./spec/bookshelf/spec/requests/books/create_spec.rb[1:2:1]           | failed | 0.00005 seconds |
+./spec/bookshelf/spec/requests/books/index/pagination_spec.rb[1:1:1] | failed | 0.00004 seconds |
+./spec/bookshelf/spec/requests/books/index/pagination_spec.rb[1:2:1] | failed | 0.00003 seconds |
+./spec/bookshelf/spec/requests/books/index_spec.rb[1:1]              | failed | 0.00003 seconds |
+./spec/bookshelf/spec/requests/books/show_spec.rb[1:1:1]             | failed | 0.00003 seconds |
+./spec/bookshelf/spec/requests/books/show_spec.rb[1:2:1]             | failed | 0.00003 seconds |
+./spec/bookshelf/spec/requests/root_spec.rb[1:1]                     | failed | 0.00003 seconds |
+./spec/oas_hanami_spec.rb[1:1]                                       | passed | 0.00149 seconds |
