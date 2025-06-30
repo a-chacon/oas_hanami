@@ -1,0 +1,11 @@
+{
+  "favicon.ico": {
+    "url": "/assets/favicon.ico"
+  },
+  "app.js": {
+    "url": "/assets/app.js"
+  },
+  "app.css": {
+    "url": "/assets/app.css"
+  }
+}

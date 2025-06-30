@@ -1,0 +1,236 @@
+# Logfile created on 2025-06-11 14:50:20 -0400 by logger.rb/v1.7.0
+[bookshelf] [INFO] [2025-06-11 14:50:20 -0400] GET 404 34µs 127.0.0.1 / -
+[bookshelf] [INFO] [2025-06-11 14:50:39 -0400] GET 404 32µs 127.0.0.1 / -
+[bookshelf] [INFO] [2025-06-11 14:51:46 -0400] GET 200 8ms 127.0.0.1 / -
+[bookshelf] [INFO] [2025-06-11 14:53:05 -0400] GET 200 8ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2025-06-11 14:53:48 -0400] GET 200 8ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400]   Loaded :sqlite in 0ms SELECT * FROM `sqlite_master` WHERE ((`name` != 'sqlite_sequence') AND (`type` = 'table'))
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400]   Loaded :sqlite in 4ms DELETE FROM `books`
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400]   Loaded :sqlite in 0ms SELECT NULL AS 'nil' FROM `sqlite_sequence` LIMIT 1
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400]   Loaded :sqlite in 0ms DELETE FROM `sqlite_sequence` WHERE (`name` = 'books')
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Practical Object-Oriented Design in Ruby', 'Sandi Metz')
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Test Driven Development', 'Kent Beck')
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400]   Loaded :sqlite in 0ms SELECT `books`.`title`, `books`.`author` FROM `books` ORDER BY `books`.`title` ASC
+[bookshelf] [INFO] [2025-06-11 14:57:56 -0400] GET 200 11ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400]   Loaded :sqlite in 0ms SELECT * FROM `sqlite_master` WHERE ((`name` != 'sqlite_sequence') AND (`type` = 'table'))
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400]   Loaded :sqlite in 5ms DELETE FROM `books`
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400]   Loaded :sqlite in 2ms DELETE FROM `sqlite_sequence` WHERE (`name` = 'books')
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400] GET 200 8ms 127.0.0.1 / -
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400]   Loaded :sqlite in 3ms INSERT INTO `books` (`title`, `author`) VALUES ('Practical Object-Oriented Design in Ruby', 'Sandi Metz')
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Test Driven Development', 'Kent Beck')
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400]   Loaded :sqlite in 0ms SELECT `books`.`title`, `books`.`author` FROM `books` ORDER BY `books`.`title` ASC
+[bookshelf] [INFO] [2025-06-11 14:58:43 -0400] GET 200 4ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 0ms SELECT * FROM `sqlite_master` WHERE ((`name` != 'sqlite_sequence') AND (`type` = 'table'))
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 3ms DELETE FROM `books`
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 1ms DELETE FROM `sqlite_sequence` WHERE (`name` = 'books')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 3ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 0', 'Author 0')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 1', 'Author 1')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 2', 'Author 2')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 3', 'Author 3')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 3ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 4', 'Author 4')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 5', 'Author 5')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 6', 'Author 6')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 7', 'Author 7')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 8', 'Author 8')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 9', 'Author 9')
+[bookshelf] [ERROR] [2025-06-11 15:00:39 -0400] GET 500 0µs 127.0.0.1 /books -
+  {page: "1", per_page: "3"}
+  wrong number of arguments (given 1, expected 0) (ArgumentError)
+  /home/achacon/Documentos/proyectos/oas_hanami/test/bookshelf/app/repos/book_repo.rb:6:in 'all_by_title'
+  /home/achacon/Documentos/proyectos/oas_hanami/test/bookshelf/app/actions/books/index.rb:10:in 'Bookshelf::Actions::Books::Index#handle'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-controller-2.2.0/lib/hanami/action.rb:329:in 'block in Hanami::Action#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-controller-2.2.0/lib/hanami/action.rb:310:in 'Kernel#catch'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-controller-2.2.0/lib/hanami/action.rb:310:in 'Hanami::Action#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-2.2.1/lib/hanami/slice/routing/resolver.rb:78:in 'block in Hanami::Slice::Routing::Resolver#resolve_slice_action'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-router-2.2.0/lib/hanami/router.rb:109:in 'Hanami::Router#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-2.2.17/lib/rack/static.rb:162:in 'Rack::Static#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-2.2.17/lib/rack/method_override.rb:24:in 'Rack::MethodOverride#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-2.2.1/lib/hanami/middleware/render_errors.rb:57:in 'Hanami::Middleware::RenderErrors#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/dry-monitor-1.0.1/lib/dry/monitor/rack/middleware.rb:36:in 'block in Dry::Monitor::Rack::Middleware#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/dry-monitor-1.0.1/lib/dry/monitor/clock.rb:15:in 'Dry::Monitor::Clock#measure'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/dry-monitor-1.0.1/lib/dry/monitor/rack/middleware.rb:36:in 'Dry::Monitor::Rack::Middleware#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-router-2.2.0/lib/hanami/middleware/app.rb:40:in 'Hanami::Middleware::App#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-2.2.1/lib/hanami/slice.rb:791:in 'Hanami::Slice::ClassMethods#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-test-2.2.0/lib/rack/test.rb:360:in 'Rack::Test::Session#process_request'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-test-2.2.0/lib/rack/test.rb:163:in 'Rack::Test::Session#custom_request'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-test-2.2.0/lib/rack/test.rb:112:in 'Rack::Test::Session#get'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/3.4.0/forwardable.rb:240:in 'Rack::Test::Methods#get'
+  /home/achacon/Documentos/proyectos/oas_hanami/test/bookshelf/spec/requests/books/index/pagination_spec.rb:14:in 'block (3 levels) in <top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:263:in 'BasicObject#instance_exec'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:263:in 'block in RSpec::Core::Example#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:511:in 'block in RSpec::Core::Example#with_around_and_singleton_context_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:468:in 'block in RSpec::Core::Example#with_around_example_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/hooks.rb:486:in 'block in RSpec::Core::Hooks::HookCollections#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/hooks.rb:624:in 'RSpec::Core::Hooks::HookCollections#run_around_example_hooks_for'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/hooks.rb:486:in 'RSpec::Core::Hooks::HookCollections#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:468:in 'RSpec::Core::Example#with_around_example_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:511:in 'RSpec::Core::Example#with_around_and_singleton_context_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:259:in 'RSpec::Core::Example#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:653:in 'block in RSpec::Core::ExampleGroup.run_examples'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:649:in 'Array#map'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:649:in 'RSpec::Core::ExampleGroup.run_examples'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:614:in 'RSpec::Core::ExampleGroup.run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:615:in 'block in RSpec::Core::ExampleGroup.run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:615:in 'Array#map'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:615:in 'RSpec::Core::ExampleGroup.run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:121:in 'block (3 levels) in RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:121:in 'Array#map'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:121:in 'block (2 levels) in RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/configuration.rb:2097:in 'RSpec::Core::Configuration#with_suite_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:116:in 'block in RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/reporter.rb:74:in 'RSpec::Core::Reporter#report'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:115:in 'RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:89:in 'RSpec::Core::Runner#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:71:in 'RSpec::Core::Runner.run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:45:in 'RSpec::Core::Runner.invoke'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/exe/rspec:4:in '<top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/bin/rspec:25:in 'Kernel#load'
+  /home/achacon/.rbenv/versions/3.4.2/bin/rspec:25:in '<top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli/exec.rb:59:in 'Kernel.load'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli/exec.rb:59:in 'Bundler::CLI::Exec#kernel_load'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli/exec.rb:23:in 'Bundler::CLI::Exec#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli.rb:452:in 'Bundler::CLI#exec'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor/command.rb:28:in 'Bundler::Thor::Command#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in 'Bundler::Thor::Invocation#invoke_command'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor.rb:538:in 'Bundler::Thor.dispatch'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli.rb:35:in 'Bundler::CLI.dispatch'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor/base.rb:584:in 'Bundler::Thor::Base::ClassMethods#start'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli.rb:29:in 'Bundler::CLI.start'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/bundler-2.6.9/exe/bundle:28:in 'block in <top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/friendly_errors.rb:117:in 'Bundler.with_friendly_errors'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/bundler-2.6.9/exe/bundle:20:in '<top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/bin/bundle:25:in 'Kernel#load'
+  /home/achacon/.rbenv/versions/3.4.2/bin/bundle:25:in '<main>'
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Practical Object-Oriented Design in Ruby', 'Sandi Metz')
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Test Driven Development', 'Kent Beck')
+[bookshelf] [ERROR] [2025-06-11 15:00:39 -0400] GET 500 0µs 127.0.0.1 /books -
+  wrong number of arguments (given 1, expected 0) (ArgumentError)
+  /home/achacon/Documentos/proyectos/oas_hanami/test/bookshelf/app/repos/book_repo.rb:6:in 'all_by_title'
+  /home/achacon/Documentos/proyectos/oas_hanami/test/bookshelf/app/actions/books/index.rb:10:in 'Bookshelf::Actions::Books::Index#handle'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-controller-2.2.0/lib/hanami/action.rb:329:in 'block in Hanami::Action#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-controller-2.2.0/lib/hanami/action.rb:310:in 'Kernel#catch'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-controller-2.2.0/lib/hanami/action.rb:310:in 'Hanami::Action#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-2.2.1/lib/hanami/slice/routing/resolver.rb:78:in 'block in Hanami::Slice::Routing::Resolver#resolve_slice_action'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-router-2.2.0/lib/hanami/router.rb:109:in 'Hanami::Router#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-2.2.17/lib/rack/static.rb:162:in 'Rack::Static#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-2.2.17/lib/rack/method_override.rb:24:in 'Rack::MethodOverride#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-2.2.1/lib/hanami/middleware/render_errors.rb:57:in 'Hanami::Middleware::RenderErrors#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/dry-monitor-1.0.1/lib/dry/monitor/rack/middleware.rb:36:in 'block in Dry::Monitor::Rack::Middleware#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/dry-monitor-1.0.1/lib/dry/monitor/clock.rb:15:in 'Dry::Monitor::Clock#measure'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/dry-monitor-1.0.1/lib/dry/monitor/rack/middleware.rb:36:in 'Dry::Monitor::Rack::Middleware#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-router-2.2.0/lib/hanami/middleware/app.rb:40:in 'Hanami::Middleware::App#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/hanami-2.2.1/lib/hanami/slice.rb:791:in 'Hanami::Slice::ClassMethods#call'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-test-2.2.0/lib/rack/test.rb:360:in 'Rack::Test::Session#process_request'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-test-2.2.0/lib/rack/test.rb:163:in 'Rack::Test::Session#custom_request'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rack-test-2.2.0/lib/rack/test.rb:112:in 'Rack::Test::Session#get'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/3.4.0/forwardable.rb:240:in 'Rack::Test::Methods#get'
+  /home/achacon/Documentos/proyectos/oas_hanami/test/bookshelf/spec/requests/books/index_spec.rb:12:in 'block (2 levels) in <top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:263:in 'BasicObject#instance_exec'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:263:in 'block in RSpec::Core::Example#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:511:in 'block in RSpec::Core::Example#with_around_and_singleton_context_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:468:in 'block in RSpec::Core::Example#with_around_example_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/hooks.rb:486:in 'block in RSpec::Core::Hooks::HookCollections#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/hooks.rb:624:in 'RSpec::Core::Hooks::HookCollections#run_around_example_hooks_for'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/hooks.rb:486:in 'RSpec::Core::Hooks::HookCollections#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:468:in 'RSpec::Core::Example#with_around_example_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:511:in 'RSpec::Core::Example#with_around_and_singleton_context_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example.rb:259:in 'RSpec::Core::Example#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:653:in 'block in RSpec::Core::ExampleGroup.run_examples'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:649:in 'Array#map'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:649:in 'RSpec::Core::ExampleGroup.run_examples'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/example_group.rb:614:in 'RSpec::Core::ExampleGroup.run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:121:in 'block (3 levels) in RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:121:in 'Array#map'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:121:in 'block (2 levels) in RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/configuration.rb:2097:in 'RSpec::Core::Configuration#with_suite_hooks'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:116:in 'block in RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/reporter.rb:74:in 'RSpec::Core::Reporter#report'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:115:in 'RSpec::Core::Runner#run_specs'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:89:in 'RSpec::Core::Runner#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:71:in 'RSpec::Core::Runner.run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/lib/rspec/core/runner.rb:45:in 'RSpec::Core::Runner.invoke'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/rspec-core-3.13.4/exe/rspec:4:in '<top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/bin/rspec:25:in 'Kernel#load'
+  /home/achacon/.rbenv/versions/3.4.2/bin/rspec:25:in '<top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli/exec.rb:59:in 'Kernel.load'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli/exec.rb:59:in 'Bundler::CLI::Exec#kernel_load'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli/exec.rb:23:in 'Bundler::CLI::Exec#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli.rb:452:in 'Bundler::CLI#exec'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor/command.rb:28:in 'Bundler::Thor::Command#run'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in 'Bundler::Thor::Invocation#invoke_command'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor.rb:538:in 'Bundler::Thor.dispatch'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli.rb:35:in 'Bundler::CLI.dispatch'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/vendor/thor/lib/thor/base.rb:584:in 'Bundler::Thor::Base::ClassMethods#start'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/cli.rb:29:in 'Bundler::CLI.start'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/bundler-2.6.9/exe/bundle:28:in 'block in <top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/site_ruby/3.4.0/bundler/friendly_errors.rb:117:in 'Bundler.with_friendly_errors'
+  /home/achacon/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/bundler-2.6.9/exe/bundle:20:in '<top (required)>'
+  /home/achacon/.rbenv/versions/3.4.2/bin/bundle:25:in 'Kernel#load'
+  /home/achacon/.rbenv/versions/3.4.2/bin/bundle:25:in '<main>'
+[bookshelf] [INFO] [2025-06-11 15:00:39 -0400] GET 200 989µs 127.0.0.1 / -
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 0ms SELECT * FROM `sqlite_master` WHERE ((`name` != 'sqlite_sequence') AND (`type` = 'table'))
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 3ms DELETE FROM `books`
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms DELETE FROM `sqlite_sequence` WHERE (`name` = 'books')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400] GET 200 8ms 127.0.0.1 / -
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Practical Object-Oriented Design in Ruby', 'Sandi Metz')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Test Driven Development', 'Kent Beck')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms SELECT `books`.`title`, `books`.`author` FROM `books` ORDER BY `books`.`title` ASC LIMIT 5 OFFSET 0
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400] GET 200 37ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 0', 'Author 0')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 1', 'Author 1')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 2', 'Author 2')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 3', 'Author 3')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 4', 'Author 4')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 3ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 5', 'Author 5')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 6', 'Author 6')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 7', 'Author 7')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 8', 'Author 8')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 9', 'Author 9')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400] GET 422 3ms 127.0.0.1 /books -
+  {page: "-1", per_page: "3000"}
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 0', 'Author 0')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 1', 'Author 1')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 2', 'Author 2')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 3', 'Author 3')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 4', 'Author 4')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 5', 'Author 5')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 6', 'Author 6')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 7', 'Author 7')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 8', 'Author 8')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 9', 'Author 9')
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400]   Loaded :sqlite in 0ms SELECT `books`.`title`, `books`.`author` FROM `books` ORDER BY `books`.`title` ASC LIMIT 3 OFFSET 0
+[bookshelf] [INFO] [2025-06-11 15:01:49 -0400] GET 200 1ms 127.0.0.1 /books -
+  {page: "1", per_page: "3"}
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 0ms SELECT * FROM `sqlite_master` WHERE ((`name` != 'sqlite_sequence') AND (`type` = 'table'))
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 3ms DELETE FROM `books`
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms DELETE FROM `sqlite_sequence` WHERE (`name` = 'books')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 0', 'Author 0')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 1', 'Author 1')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 2', 'Author 2')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 3', 'Author 3')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 4', 'Author 4')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 5', 'Author 5')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 6', 'Author 6')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 7', 'Author 7')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 8', 'Author 8')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 9', 'Author 9')
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400] GET 422 44ms 127.0.0.1 /books -
+  {page: "-1", per_page: "3000"}
+[bookshelf] [INFO] [2025-06-11 15:02:43 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 0', 'Author 0')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 1', 'Author 1')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 2', 'Author 2')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 3', 'Author 3')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 4', 'Author 4')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 5', 'Author 5')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 6', 'Author 6')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 7', 'Author 7')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 8', 'Author 8')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 2ms INSERT INTO `books` (`title`, `author`) VALUES ('Book 9', 'Author 9')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 0ms SELECT `books`.`title`, `books`.`author` FROM `books` ORDER BY `books`.`title` ASC LIMIT 3 OFFSET 0
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400] GET 200 2ms 127.0.0.1 /books -
+  {page: "1", per_page: "3"}
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400] GET 200 921µs 127.0.0.1 / -
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Practical Object-Oriented Design in Ruby', 'Sandi Metz')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms INSERT INTO `books` (`title`, `author`) VALUES ('Test Driven Development', 'Kent Beck')
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400]   Loaded :sqlite in 1ms SELECT `books`.`title`, `books`.`author` FROM `books` ORDER BY `books`.`title` ASC LIMIT 5 OFFSET 0
+[bookshelf] [INFO] [2025-06-11 15:02:44 -0400] GET 200 1ms 127.0.0.1 /books -
