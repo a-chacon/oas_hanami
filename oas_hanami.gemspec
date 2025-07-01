@@ -33,5 +33,5 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "oas_core", "~> 0.5.3"
+  spec.add_dependency "oas_core", "~> 1.0.0"
 end

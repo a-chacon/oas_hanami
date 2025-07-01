@@ -15,14 +15,15 @@ module Bookshelf
         # @summary Retrieve a book by ID
         # This is a example docstring **Use with carefull**
         # @parameter id(path) [!Integer] The ID of the book to retrieve
-        # @response Book found(200) [Hash] The book details
-        # @response_example Book found(200) [Hash]
+        # @response Book found(200) [Hash]
+        # @response_example Book found(200) [Hash
         #   {
         #     id: 1,
         #     title: "Example Book",
         #     author: "John Doe"
         #   }
-        # @response Book not found(404) [Hash{success: Boolean, message: String}] Error message
+        #   ]
+        # @response Book not found(404) [Hash{success: Boolean, message: String}]
         # @tags Books
         def handle(request, response)
           book = book_repo.get(request.params[:id])

@@ -5,7 +5,7 @@ module Bookshelf
     module Home
       class Index < Bookshelf::Action
         # @summary Welcome message for the Bookshelf API
-        # @response Welcome message(200) [String] A simple welcome message
+        # @response Welcome message(200) [String]
         # @no_auth
         # @tags Home
         def handle(_request, response)

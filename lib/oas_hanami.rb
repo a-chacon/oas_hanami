@@ -24,9 +24,9 @@ module OasHanami
       OasCore.config = config
 
       host_routes = RouteExtractor.host_routes
-      oas = OasCore::Builders::SpecificationBuilder.new.with_oas_routes(host_routes).build
+      oas_source = config.source_oas_path ? read_source_oas_file : {}
 
-      oas.to_spec
+      OasCore.build(host_routes, oas_source: oas_source)
     end
 
     def configure
@@ -42,6 +42,16 @@ module OasHanami
 
       MethodSource.clear_cache
       RouteExtractor.clear_cache
+    end
+
+    def read_source_oas_file
+      file_path = Hanami.app.root.join(config.source_oas_path)
+
+      JSON.parse(File.read(file_path), symbolize_names: true)
+    rescue Errno::ENOENT => e
+      raise "Failed to read source OAS file at #{file_path}: #{e.message}"
+    rescue JSON::ParserError => e
+      raise "Failed to parse source OAS file at #{file_path}: #{e.message}"
     end
   end
 end

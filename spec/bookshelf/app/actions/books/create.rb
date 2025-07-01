@@ -14,28 +14,22 @@ module Bookshelf
         end
 
         # @summary Create a new book
-        # @request_body The book to be created [!Hash]
-        #   {
-        #     book: {
-        #       title: String,
-        #       author: String
+        # @request_body The book to be created [Reference:#/schemas/Book]
+        # @request_body_example Simple Book
+        #   [JSON{
+        #     "book": {
+        #       "title": "Example Book",
+        #       "author": "John Doe"
         #     }
-        #   }
-        # @request_body_example Simple Book [Hash]
-        #   {
-        #     book: {
-        #       title: "Example Book",
-        #       author: "John Doe"
-        #     }
-        #   }
-        # @response Book created(201) [Hash] The created book details
-        # @response_example Book created(201) [Hash]
-        #   {
-        #     id: 1,
-        #     title: "Example Book",
-        #     author: "John Doe"
-        #   }
-        # @response Validation errors(422) [Hash{success: Boolean, errors: Array<Hash>}] Error details
+        #   }]
+        # @response Book created(201) [Hash{ id: String}]
+        # @response_example Book created(201)
+        #   [JSON{
+        #     "id": 1,
+        #     "title": "Example Book",
+        #     "author": "John Doe"
+        #   }]
+        # @response Validation errors(422) [Hash{success: Boolean, errors: Array<Hash>}]
         # @tags Books
         def handle(request, response)
           if request.params.valid?

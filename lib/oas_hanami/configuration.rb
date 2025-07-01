@@ -2,7 +2,7 @@
 
 module OasHanami
   class Configuration < OasCore::Configuration
-    attr_accessor :rapidoc_theme
+    attr_accessor :rapidoc_theme, :source_oas_path
     attr_reader :include_mode
 
     def initialize
@@ -10,6 +10,7 @@ module OasHanami
 
       @include_mode = :all
       @rapidoc_theme = :hanami
+      @source_oas_path = nil
     end
 
     def include_mode=(value)
