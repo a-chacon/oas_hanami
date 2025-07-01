@@ -14,13 +14,7 @@ module Bookshelf
         end
 
         # @summary Create a new book
-        # @request_body The book to be created
-        #   [!Hash{
-        #     book: Hash{
-        #       title: String,
-        #       author: String
-        #     }
-        #   }]
+        # @request_body The book to be created [Reference:#/schemas/Book]
         # @request_body_example Simple Book
         #   [JSON{
         #     "book": {

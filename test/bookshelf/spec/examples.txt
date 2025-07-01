@@ -1,6 +1,0 @@
-example_id                                            | status | run_time        |
------------------------------------------------------ | ------ | --------------- |
-./spec/requests/books/index/pagination_spec.rb[1:1:1] | failed | 0.02795 seconds |
-./spec/requests/books/index/pagination_spec.rb[1:2:1] | failed | 0.07693 seconds |
-./spec/requests/books/index_spec.rb[1:1]              | failed | 0.00694 seconds |
-./spec/requests/root_spec.rb[1:1]                     | passed | 0.00126 seconds |

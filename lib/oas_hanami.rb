@@ -45,7 +45,7 @@ module OasHanami
     end
 
     def read_source_oas_file
-      file_path = Hanami::App.root.join(config.source_oas_path)
+      file_path = Hanami.app.root.join(config.source_oas_path)
 
       JSON.parse(File.read(file_path), symbolize_names: true)
     rescue Errno::ENOENT => e

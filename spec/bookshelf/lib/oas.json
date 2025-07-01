@@ -1,0 +1,23 @@
+{
+  "components": {
+    "schemas": {
+      "Book": {
+        "type": "object",
+        "required": [
+          "title",
+          "author"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The title of the book"
+          },
+          "author": {
+            "type": "string",
+            "description": "The author of the book"
+          }
+        }
+      }
+    }
+  }
+}
